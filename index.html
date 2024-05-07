@@ -1,3 +1,79 @@
-<html>
-  <h1>Hello World!!!</h1>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="files/css/index.css">
+    <script src='https://kit.fontawesome.com/0798bfb7d0.js' crossorigin='anonymous'></script>
+    <script type="text/javascript" src="plugins/showdown-2.1.0/dist/showdown.min.js"></script>
+    <title>XJun Dev Channel</title>
+</head>
+<body>
+<div class="body-container">
+    <nav class="sidebar" id="sidebar">
+        <header>
+            <span class="toggle fa-solid fa-angles-left" id="sidebar-toggle"></span>
+        </header>
+        <div class="navi-button-container" id="navi-button-container">
+            <div>
+                <ul id="navi-button-list">
+                    <li class="search-box" id="sidebar-search-box">
+                        <span class="icon fa-solid fa-magnifying-glass"></span>
+                        <input type="search" id="search-input" placeholder="Search..." oninput="sidebarSearch()">
+                    </li>
+
+                    <li class="navi-button" id="home">
+                        <span class="icon fa-solid fa-house-chimney"></span>
+                        <span class="text nav-text">Home</span>
+                    </li>
+                    <li class="navi-button" id="games">
+                        <span class="icon fa-solid fa-gamepad"></span>
+                        <span class="text nav-text">Games</span>
+                    </li>
+                    <li class="navi-button" id="tutorials">
+                        <span class="icon fa-solid fa-book"></span>
+                        <span class="text nav-text">Tutorials</span>
+                    </li>
+                    <li class="navi-button" id="blogs">
+                        <span class="icon fa-solid fa-blog"></span>
+                        <span class="text nav-text">Blogs</span>
+                    </li>
+                    <li class="navi-button" id="contact">
+                        <span class="icon fa-solid fa-envelope"></span>
+                        <span class="text nav-text">Contact</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sidebar-bottom-container">
+            <ul>
+                <li class="display-mode-container">
+                    <div class="display-mode-icon-container">
+                        <span class="icon fa-solid fa-sun" id="sun-icon"></span>
+                        <span class="icon fa-solid fa-moon" id="moon-icon"></span>
+                    </div>
+                    <div class="display-mode-toggle-container">
+                        <span class="display-mode-toggle" id="display-mode-toggle"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="main-container">
+        <div class="content-container" id="home-content-container"></div>
+        <div class="content-container" id="games-content-container"></div>
+        <div class="content-container" id="tutorials-content-container"></div>
+        <div class="content-container" id="blogs-content-container"></div>
+        <div class="content-container" id="contact-content-container"></div>
+
+        <div class="copyright-container" id="footer">
+            <span class="copyright-text">&copy;xiao jun;</span>
+            <span class="copyright-text" id="current-year"></span>
+        </div>
+    </section>
+</div>
+<script src="files/js/index.js"></script>
+</body>
 </html>

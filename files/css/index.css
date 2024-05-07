@@ -1,0 +1,71 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap');*/
+
+* {
+    font-family: "Noto Sans SC", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-color: #faf7f2;
+    --sidebar-color: #fafafa;
+    --primary-color: rgba(120, 200, 255, 0.9);
+    --primary-color-light: #98a1a8;
+    --border-color: rgba(190, 191, 199, 0.2);
+    --toggle-color: #DDD;
+    --text-color: #323232;
+    --link-color: #4c84eb;
+    --code-color: #043e88;
+    --shadow: rgba(0, 0, 0, 0.5);
+
+    --transition-100ms: all 0.1s ease;
+    --transition-200ms: all 0.2s ease;
+    --transition-300ms: all 0.3s ease;
+    --transition-400ms: all 0.4s ease;
+    --transition-500ms: all 0.5s ease;
+}
+
+.display-transition {
+    transition: none;
+}
+
+body {
+    transition: var(--transition-500ms);
+}
+
+body.dark-mode {
+    --body-color: #18191A;
+    --sidebar-color: #242526;
+    --primary-color: #9696d2;
+    --primary-color-light: #50555a;
+    --toggle-color: #FFF;
+    --text-color: #CCC;
+    --link-color: #64b9ff;
+    --code-color: #bdd4f6;
+}
+
+.body-container {
+    height: 100vh;
+    display: flex;
+    background: var(--body-color);
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    justify-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 5px 1px;
+    background: var(--sidebar-color);
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+    transition: var(--transition-200ms);
+}
+
+.sidebar .text {
+    
+}
