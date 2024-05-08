@@ -74,12 +74,17 @@ body.dark-mode {
     white-space: nowrap;
 }
 
+.sidebar.closed {
+    width: 60px;
+}
+
 .sidebar.closed .text {
     display: none;
 }
 
 .sidebar .image-text img {
     width: 48px;
+    border-radius: 5px;
 }
 
 .sidebar header {
@@ -101,7 +106,7 @@ body.dark-mode {
     background: var(--primary-color);
     border-radius: 50%;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-    transform: translate(-50%);
+    transform: translateY(-50%);
     transition: var(--transition-200ms);
 }
 
@@ -285,6 +290,14 @@ body.dark-mode .display-mode-toggle::before {
     flex: 1;
     flex-direction: column;
     padding: 1% 2%;
+}
+
+.content-container
+{
+    flex: 1;
+    padding: 1% 1% 2% 1%;
+    overflow: auto;
+    transition: var(--transition-500ms);
 }
 
 .close-button:hover,
