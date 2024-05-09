@@ -165,7 +165,7 @@ function initializeContent()
                     if (focusedNaviButton.id === 'home' || focusedNaviButton.id === 'contact') return;
                     
                     const naviContent = naviMap.get(naviBtn.id);
-                    const closeButton = naviBtn.querySelector('.close-button')
+                    const closeButton = naviContent.querySelector('.close-button')
                     
                     if (closeButton)
                     {
@@ -216,6 +216,9 @@ function ShowNaviContent(naviButton)
         element.classList.remove('focused');
     });
     focusedNaviButton = naviButton;
+    
+    highlightNaviButton(naviButton);
+    
     shownContentContainer.style.display = 'none';
     shownContentContainer = naviMap.get(naviButton.id);
     shownContentContainer.style.display = 'flex';
